@@ -1,0 +1,38 @@
+/* reset.css */
+/* Elimina márgenes, rellenos y bordes predeterminados */
+html, body, header, h1, h2, article, p, footer, a, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Establece el box-model a border-box para un mejor control */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Elimina estilos de lista en elementos ul, ol */
+ul, ol {
+    list-style: none;
+}
+
+/* Elimina subrayado en enlaces y hereda color de texto */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Evita que las imágenes tengan espacio debajo */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Normaliza el comportamiento de los elementos HTML5 en navegadores antiguos */
+article, footer, header {
+    display: block;
+}
